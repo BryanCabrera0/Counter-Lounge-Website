@@ -3,19 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home</title>
+    <title>counter lounge</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>welcome</h1>
-    <h4>please enjoy your stay.</h4> <hr>
+    <h4>please enjoy each number equally.</h4> <hr>
     
 
     <label id = "countLabel">0</label><br>
-    <button id = "countButton">click and number go up forever</button><br>
-    <script src = "app.js"></script><br>
+    <button id = "countButton">click</button><br>
+    <script> 
+        let count = 0;
+
+        document.getElementById("countButton").onclick = function() {
+        count++;
+        document.getElementById("countLabel").innerHTML = count;
+        }  
+     </script>
     
-    <a href = "https://www.linkedin.com/in/bryancabrera0/" target="_blank">linkedin</a><br>
+    <a id="linkedin" href = "https://www.linkedin.com/in/bryancabrera0/" target="_blank">linkedin</a><br>
 
 </body>
 </html>
