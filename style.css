@@ -16,10 +16,19 @@ body{
 #countButton{
     font-size: large;
     position: relative;
-    top: 100px;
+    top: 90px;
 }
 #linkedin{
     color: #0077b5;
     position: relative;
-    top: 200px;
+    top: 300px;
+}
+#lofi{
+    position: relative;
+    top: 100px;
+}
+p{
+    position:relative;
+    top:100px;
+
 }
