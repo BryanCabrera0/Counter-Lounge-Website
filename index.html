@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>counter lounge</title>
     <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
 
 </head>
 <body>
@@ -19,12 +20,21 @@
         document.getElementById("countButton").onclick = function() {
         count++;
         document.getElementById("countLabel").innerHTML = count;
+        if (count >= 25){
+          document.getElementById("dadjoke").style.display = "initial";
+        }
         }  
      </script>
      
+     <button id = "dadjoke" onclick = "alert(randomDadjoke)"hidden>click 4 dad joke</button>
     
-    <a id="linkedin" href = "https://www.linkedin.com/in/bryancabrera0/" target="_blank">linkedin</a><br>
+     <a id="linkedin" href = "https://www.linkedin.com/in/bryancabrera0/" target="_blank">linkedin</a><br>
     <p>complimentary music to click to.</p>
   <audio id="lofi" controls loop src = "lofi.mp3"></audio>
+
+
+
+
 </body>
 </html>
+
